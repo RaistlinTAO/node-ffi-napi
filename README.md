@@ -1,5 +1,24 @@
 node-ffi-napi
 =============
+## This is the custom build to bypass the current Windows build error.
+
+Error Log
+```
+'"call"' is not recognized as an internal or external command,
+operable program or batch file.
+```
+
+Just add this line to your project.
+```
+"dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "ws": "^8.16.0",
+    "ffi-napi": "git@github.com:RaistlinTAO/node-ffi-napi.git"
+  },
+```
+
+
 ### Node.js Foreign Function Interface for N-API
 [![Greenkeeper badge](https://badges.greenkeeper.io/node-ffi-napi/node-ffi-napi.svg)](https://greenkeeper.io/)
 
@@ -8,6 +27,7 @@ node-ffi-napi
 [![Build Status](https://travis-ci.org/node-ffi-napi/node-ffi-napi.svg?style=flat&branch=master)](https://travis-ci.org/node-ffi-napi/node-ffi-napi?branch=master)
 [![Coverage Status](https://coveralls.io/repos/node-ffi-napi/node-ffi-napi/badge.svg?branch=master)](https://coveralls.io/r/node-ffi-napi/node-ffi-napi?branch=master)
 [![Dependency Status](https://david-dm.org/node-ffi-napi/node-ffi-napi.svg?style=flat)](https://david-dm.org/node-ffi-napi/node-ffi-napi)
+
 
 `node-ffi-napi` is a Node.js addon for loading and calling dynamic libraries
 using pure JavaScript. It can be used to create bindings to native libraries
